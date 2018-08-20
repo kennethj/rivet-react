@@ -51,6 +51,7 @@ export class Modal extends Component {
 
         var controls
         if (props.clickOk) {
+            // OK button
             var okLabel
             if (props.okLabel) {
                 okLabel = props.okLabel
@@ -58,9 +59,55 @@ export class Modal extends Component {
             } else {
                 okLabel = 'OK'
             }
+
+            // Cancel button
+            var cancelLabel
+            if (props.cancelLabel) {
+                cancelLabel = props.cancelLabel
+                delete props.cancelLabel
+            } else {
+                cancelLabel = 'Cancel'
+            }
+
+
+            // OK class
+            var okClass
+            if (props.okClass) {
+                okClass = props.okClass
+                delete props.okClass
+            }
+
+            // Cancel class
+            var cancelClass
+            if (props.cancelClass) {
+                cancelClass = props.cancelClass
+                delete props.cancelClass
+            } else {
+                cancelClass = 'rvt-button--secondary'
+            }
+
+            // OK disabled
+            var okDisabled
+            if (props.okDisabled) {
+                okDisabled = props.okDisabled
+                delete props.okDisabled
+            }
+
+            // OK disabled
+            var clickClose
+            if (props.clickClose) {
+                clickClose = props.clickClose
+                delete props.clickClose
+            }
+
+            if (props.clickCancel) {
+                clickClose = props.clickCancel
+                delete props.clickCancel
+            }
+
             controls = <div className='rvt-modal__controls'>
-                <Button margin={{right: 'sm'}} className='close-modal' onClick={props.clickOk}>{okLabel}</Button>
-                <Button secondary onClick={props.clickClose}>Cancel</Button>
+                <Button disabled={okDisabled} margin={{right: 'sm'}} className={`close-modal ${okClass ? okClass : ''}`} onClick={props.clickOk}>{okLabel}</Button>
+                <Button className={`${cancelClass ? cancelClass : ''}`} onClick={clickClose}>{cancelLabel}</Button>
             </div>
         }
 

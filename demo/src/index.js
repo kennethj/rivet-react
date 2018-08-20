@@ -312,7 +312,7 @@ class Demo extends Component {
                         <Button onClick={() => {this.toggleModal("modal-example")}}>Modal</Button>
                         <Button onClick={() => {this.toggleModal("modal-example-2")}}>Modal 2</Button>
 
-                        <Modal toggleModal={this.toggleModal} activeModal={this.state.activeModal} id="modal-example" title="Transfer group account(s)">
+                        <Modal okLabel={"Approve"} cancelLabel={"Deny"} okClass={"rvt-button--success"} cancelClass={"rvt-button--danger"} clickOk={() => {console.log("clicked approve")}} clickClose={() => {console.log("clicked cancel")}} toggleModal={this.toggleModal} activeModal={this.state.activeModal} id="modal-example" title="Transfer group account(s)">
                             <p>Your are requesting the transfer of groups:<br/><strong>ITDJHNWEB, JTDJHNWEB, DSOIUFNWEB,
                                 DOSIFUSDOIF</strong></p>
                         </Modal>
