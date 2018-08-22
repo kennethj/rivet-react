@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
 import * as React from 'react';
-import Badge from './Badge';
+import { Badge } from './index';
 
 describe('<Badge />', () => {
     describe('Rendering and styling', () =>{
@@ -29,6 +29,9 @@ describe('<Badge />', () => {
             expect(cut.find('span').hasClass('rvt-badge--action')).toBe(false);
             expect(cut.find('span').hasClass('rvt-badge--secondary')).toBe(false);
             expect(cut.find('span').hasClass('rvt-badge--action-secondary')).toBe(true);
+        });
+        it('should have propTypes', () => {
+             console.log("Badge proptypes: ", Badge.propTypes);
         });
     });
 });
