@@ -15,6 +15,8 @@ export interface StatefulAlertProps {
      * Optional event to raise when the alert is dismissed
      */
     onDismiss?: Rivet.Action
+    id?: string,
+    className?: string,
 }
 
 export interface StatelessAlertProps extends StatefulAlertProps {

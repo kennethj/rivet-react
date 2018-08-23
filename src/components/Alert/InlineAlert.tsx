@@ -16,15 +16,18 @@ interface InlineAlertProps {
      * See: https://rivet.uits.iu.edu/components/forms/text-input/#inline-validation-states
      */
     variant: Variant;
+    className?: string,
+    id?: string,
 };
 
-const InlineAlert: React.SFC<InlineAlertProps & React.HTMLAttributes<HTMLDivElement>> =
+const InlineAlert: React.SFC<InlineAlertProps> =
     ({
         children,
         className,
-        id = Rivet.shortuid(),
-        standalone = false,
-        variant
+        id,
+        standalone,
+        variant,
+        ... attrs
     }) => {
         const classes = classNames({
             ['rvt-inline-alert']: true,
@@ -32,7 +35,7 @@ const InlineAlert: React.SFC<InlineAlertProps & React.HTMLAttributes<HTMLDivElem
             [`rvt-inline-alert--${alertClass(variant)}`]: true
         }, className);
         return (
-            <div className={classes}>
+            <div className={classes} {...attrs}>
                 <span className="rvt-inline-alert__icon">
                     <svg role="img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <g fill="currentColor">
@@ -47,9 +50,19 @@ const InlineAlert: React.SFC<InlineAlertProps & React.HTMLAttributes<HTMLDivElem
         );
     };
 InlineAlert.displayName = 'InlineAlert';
+
 InlineAlert.propTypes = {
-    standalone: PropTypes.bool,
-    variant: PropTypes.string
+    standalone: PropTypes.bool.isRequired,
+    variant: PropTypes.oneOf(['info' as Variant, 'invalid' as Variant, 'valid' as Variant, 'warning' as Variant]).isRequired,
+    className: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired
 };
+
+InlineAlert.defaultProps = {
+    standalone: false,
+    variant: "info",
+    className: "",
+    id: Rivet.shortuid()
+}
 
 export default Rivet.rivetize(InlineAlert);

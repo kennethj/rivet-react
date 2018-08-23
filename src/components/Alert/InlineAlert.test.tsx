@@ -29,6 +29,10 @@ describe('Inline Alerts', () => {
         const cut = mount(<InlineAlert variant="info">{messageText}</InlineAlert>);
         expect(cut.find('.rvt-inline-alert').text()).toBe(messageText);
     });
+    it('should pass disabled flag to underlying div', () => {
+        const cut = mount(<InlineAlert variant="invalid" className="test" disabled>😬</InlineAlert>);
+        expect(cut.find('.rvt-inline-alert').prop('disabled')).toBe(true);
+    });
 });
 
 describe('Standalone Inline Alerts', () => {

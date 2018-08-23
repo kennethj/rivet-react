@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as Rivet from '../util/Rivet';
 import { StatelessAlertProps } from './common';
 
-const Alert : React.SFC<StatelessAlertProps & React.HTMLAttributes<HTMLDivElement>> = 
+const Alert : React.SFC<StatelessAlertProps> = 
     ({title, onDismiss, variant, isOpen=true, id=Rivet.shortuid(), className, children, ...attrs}) => {
     const titleId = Rivet.shortuid();
 
