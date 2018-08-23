@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import * as React from 'react';
 
 import * as Rivet from '../util/Rivet';
-import { alertClass, alertIcon, Variant } from './inlineAlertVariantDisplayOptions';
+import { alertClass, alertIcon } from './inlineAlertVariantDisplayOptions';
 
 interface InlineAlertProps {
     /**
@@ -15,7 +15,7 @@ interface InlineAlertProps {
      * Rivet style for inline validation.
      * See: https://rivet.uits.iu.edu/components/forms/text-input/#inline-validation-states
      */
-    variant: Variant;
+    variant: 'info' | 'valid' | 'invalid' | 'warning';
     className?: string,
     id?: string,
 };
@@ -53,7 +53,7 @@ InlineAlert.displayName = 'InlineAlert';
 
 InlineAlert.propTypes = {
     standalone: PropTypes.bool.isRequired,
-    variant: PropTypes.oneOf(['info' as Variant, 'invalid' as Variant, 'valid' as Variant, 'warning' as Variant]).isRequired,
+    variant: PropTypes.oneOf(['info', 'valid', 'invalid', 'warning' as any]),
     className: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired
 };
