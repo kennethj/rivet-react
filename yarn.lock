@@ -70,16 +70,16 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@16.0.6":
-  version "16.0.6"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.6.tgz#f1a65a4e7be8ed5d123f8b3b9eacc913e35a1a3c"
+"@types/react-dom@16.0.7":
+  version "16.0.7"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.7.tgz#54d0f867a76b90597e8432030d297982f25c20ba"
   dependencies:
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/react-router-dom@4.2.7":
-  version "4.2.7"
-  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.2.7.tgz#9d36bfe175f916dd8d7b6b0237feed6cce376b4c"
+"@types/react-router-dom@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.3.0.tgz#c91796d02deb3a5b24bc1c5db4a255df0d18b8b5"
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
@@ -92,17 +92,11 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@16.4.11":
   version "16.4.11"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.11.tgz#330f3d864300f71150dc2d125e48644c098f8770"
   dependencies:
     "@types/prop-types" "*"
-    csstype "^2.2.0"
-
-"@types/react@16.4.1":
-  version "16.4.1"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.1.tgz#c53bbfb4a78933db587da085ac60dbf5fcf73f8f"
-  dependencies:
     csstype "^2.2.0"
 
 "@vxna/mini-html-webpack-template@^0.1.7":
@@ -6820,9 +6814,9 @@ react-docgen@3.0.0-beta12:
     node-dir "^0.1.10"
     recast "^0.13.0"
 
-react-dom@16.4.1:
-  version "16.4.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
+react-dom@16.4.2:
+  version "16.4.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.2.tgz#4afed569689f2c561d2b8da0b819669c38a0bda4"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -6889,9 +6883,9 @@ react-router@^4.3.1:
     prop-types "^15.6.1"
     warning "^4.0.1"
 
-react-scripts-ts@2.16.0:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/react-scripts-ts/-/react-scripts-ts-2.16.0.tgz#45f831a12139c3b59d6bb729c1b6ef51e0f22908"
+react-scripts-ts@2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/react-scripts-ts/-/react-scripts-ts-2.17.0.tgz#398bae19a30c9b39b3dfe0720ebb40c60c2f6574"
   dependencies:
     autoprefixer "7.1.6"
     babel-jest "^22.1.0"
@@ -7005,9 +6999,9 @@ react-test-renderer@^16.0.0-0:
     prop-types "^15.6.0"
     react-is "^16.4.2"
 
-react@16.4.1:
-  version "16.4.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
+react@16.4.2:
+  version "16.4.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
