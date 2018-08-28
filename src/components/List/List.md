@@ -42,7 +42,7 @@ Use the *plain* `variant` to create a plain list with no decoration.
 
 ### Inline List
 
-Use the *inline* `variant` to to arrange list items horizontally (inline).
+Use the *inline* `orientation` to to arrange list items horizontally (inline).
 
 ```jsx
 <List orientation="inline">

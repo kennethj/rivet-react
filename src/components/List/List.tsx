@@ -40,12 +40,12 @@ const inlineList = (orientation?: ListOrientation) => ({
 const componentClass = 'rvt-list';
 
 export const List : React.SFC <ListProps & React.HTMLAttributes<HTMLElement>> = 
-({ children, className, orientation, variant, ...props }) => {
+({ children, className, orientation, variant, ...attrs }) => {
     const classes = classNames(componentClass, plainList(variant), inlineList(orientation), className);
     const listItems = asListItems(children);
     const ListTag = variant === 'ordered' ? 'ol' : 'ul';
     return (
-        <ListTag className={classes} {...props}>
+        <ListTag className={classes} {...attrs}>
             {listItems}
         </ListTag>
     );
