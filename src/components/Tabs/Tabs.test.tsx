@@ -8,25 +8,22 @@ import Tab from './Tab';
 import Tabs from './Tabs';
 
 const simulateKeyboardInteraction = (options) => {
+  // console.log(options.component.find(options.start).debug());
   options.component
     .find(options.start)
     .simulate('click');
 
-  let focusedElement = document.activeElement;
-
   expect(options.component
-    .find(options.start)
-    .matchesElement(focusedElement));
+    .find(options.start).props()['aria-selected'])
+    .toBe(true);
 
   options.component
     .find(options.start)
     .simulate('keydown', { keyCode: options.key });
 
-  focusedElement = document.activeElement;
-
   expect(options.component
-    .find(options.end)
-    .matchesElement(focusedElement));
+    .find(options.end).props()['aria-selected'])
+    .toBe(true);
 }
 
 describe('<Tabs />', () => {
