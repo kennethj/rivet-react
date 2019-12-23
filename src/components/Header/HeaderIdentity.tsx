@@ -75,6 +75,8 @@ const HeaderIdentity: React.SFC<HeaderIdentityProps & React.HTMLAttributes<HTMLD
         : <span className="rvt-header-id__user">{username}</span>;
     const label = <>{avatarIcon} {userLabel}</>;
    
+    // React will throw a warning for using 'href="javascript:void(0)"
+    // Ongoing discussion: https://github.com/facebook/react/issues/16382
     let logout;
     if (children && onLogout) {
         logout = <a href="javascript:void(0)" onClick={onLogout}>{logoutLinkText}</a>
