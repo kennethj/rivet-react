@@ -44,7 +44,7 @@
     "rivet-collapsible": "0.2.10",
     "rivet-switch": "0.3.1",
     "rivet-uits": "1.6.0",
-    "semantic-release": "15.9.12",
+    "semantic-release": "15.14.0",
     "typescript": "2.9.2",
     "webpack": "3.8.1"
   },
