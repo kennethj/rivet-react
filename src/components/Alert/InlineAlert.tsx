@@ -21,7 +21,7 @@ interface InlineAlertProps {
     variant: 'danger' | 'info' | 'success' | 'warning';
 };
 
-const InlineAlert: React.SFC<InlineAlertProps & React.HTMLAttributes<HTMLDivElement>> =
+const InlineAlert: React.FC<InlineAlertProps & React.HTMLAttributes<HTMLDivElement>> =
     ({
         children,
         className,
