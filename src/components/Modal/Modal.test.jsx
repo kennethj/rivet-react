@@ -189,7 +189,7 @@ describe('<Modal />', () => {
         });
         
         afterEach(() => {
-            jest.restoreAllMocks();
+            jest.clearAllMocks();
         });
 
         it('should register event handlers when it is mounted if there is an onDismiss and the modal is open', () => {
