@@ -9,13 +9,13 @@ import * as Rivet from '../util/Rivet';
 
 interface BadgeProps {
     /**
-     * Optional Rivet style: a secondary badge.
+     * Optional Rivet style: a secondary badge. Value: "secondary"
      */
-    modifier?: 'secondary',
+    modifier?: string;
     /**
-     * Optional Rivet style: an info/danger/success/warning badge.
+     * Optional Rivet style: an info/danger/success/warning badge. Values: "info", "danger", "success", "warning"
      */
-    variant?: 'info' | 'danger' | 'success' | 'warning';
+    variant?: string;
 }
 
 const propTypes = {

@@ -149,7 +149,7 @@ const parseRivetHidden = (hide?: Hidden) => ({
  */
 export type ComponentDecorator<T extends Props> = ( props: T ) => string;
 
-export const rivetize = <T extends React.HTMLAttributes<HTMLElement>>(Component: React.ComponentType<T>): React.FC<T & Props> =>
+export const rivetize = (Component: React.ComponentType<any>): React.FC<any> =>
 ({ className, border, display, hide, margin, padding, typescale, ...attrs }: Props & React.HTMLAttributes<HTMLElement>) => (
         <Component className={classnames(
             parseRivetMargin(margin),

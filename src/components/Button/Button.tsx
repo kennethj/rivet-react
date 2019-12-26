@@ -11,14 +11,14 @@ import * as Rivet from '../util/Rivet';
  */
 export interface ButtonProps {
     /** 
-     * Optional Rivet style: a success/danger/plain button. 
+     * Optional Rivet style: a success/danger/plain button. Values: "success", "danger", "plain", "navigation"
      * The 'navigation' variant is intended to support the Header component only.
      */
-    variant?: 'success' | 'danger' | 'plain' | 'navigation';
-    /** Optional Rivet style: a small button. */
-    size?: 'small';
-    /** Optional Rivet style: a secondary button. */
-    modifier?: 'secondary';
+    variant?: string;
+    /** Optional Rivet style: a small button. Value: "small" */
+    size?: string;
+    /** Optional Rivet style: a secondary button. Value: "secondary" */
+    modifier?: string;
     innerRef?: React.Ref<HTMLButtonElement>;
 }
 

@@ -6,14 +6,14 @@ import * as PropTypes from 'prop-types';
 
 export interface StatefulAlertProps {
     /**
-     * Rivet alert styling. 
+     * Rivet alert styling. Values: "danger", "info", "warning", "success"
      * @see https://rivet.uits.iu.edu/components/overlays/alerts
      */ 
-    variant: "danger" | "info" | "warning" | "success",
+    variant: string;
     /**
-     * Optional alert title
+     * Optional alert title string
      */
-    title?: string | JSX.Element,
+    title?: any;
     /**
      * Optional event to raise when the alert is dismissed
      */

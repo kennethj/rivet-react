@@ -16,9 +16,9 @@ interface InlineAlertProps {
      */
     standalone?: boolean;
     /**
-     * Rivet style for inline validation.
+     * Rivet style for inline validation. Values: "danger", "info", "success", "warning"
      */
-    variant: 'danger' | 'info' | 'success' | 'warning';
+    variant: any;
 };
 
 const InlineAlert: React.FC<InlineAlertProps & React.HTMLAttributes<HTMLDivElement>> =
