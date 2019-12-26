@@ -40,13 +40,13 @@
     "license-check-and-add": "3.0.3",
     "react-docgen-typescript": "1.16.1",
     "react-scripts-ts": "3.1.0",
-    "react-styleguidist": "10.3.2",
+    "react-styleguidist": "7.2.5",
     "rivet-collapsible": "0.2.11",
     "rivet-switch": "0.3.2",
     "rivet-uits": "1.7.2",
     "semantic-release": "15.14.0",
     "typescript": "3.7.4",
-    "webpack": "4.41.4"
+    "webpack": "3.8.1"
   },
   "files": [
     "build/dist/components",
