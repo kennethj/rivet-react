@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2018 The Trustees of Indiana University
+Copyright (C) 2020 The Trustees of Indiana University
 SPDX-License-Identifier: BSD-3-Clause
 */
 import React from 'react';
@@ -10,7 +10,7 @@ const propTypes = {
     /**
      * The checkbox label
      */
-    label: PropTypes.string.isRequired,
+    label: PropTypes.node.isRequired,
     /**
      * Optional Rivet style: Make the label visible only to screen readers.
      */

@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2018 The Trustees of Indiana University
+Copyright (C) 2020 The Trustees of Indiana University
 SPDX-License-Identifier: BSD-3-Clause
 */
 import classNames from 'classnames';
@@ -17,7 +17,7 @@ const propTypes = {
 const Panel = 
 ({ children, className, variant, ...attrs }) => {
     const classes = classNames({
-        ['rvt-panel']: true,
+        'rvt-panel': true,
         [`rvt-panel--${variant}`]: !!variant
     }, className);
     return (

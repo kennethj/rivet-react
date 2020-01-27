@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2018 The Trustees of Indiana University
+Copyright (C) 2020 The Trustees of Indiana University
 SPDX-License-Identifier: BSD-3-Clause
 */
 import classNames from 'classnames';
@@ -31,7 +31,7 @@ const Footer =
             </li>
             {React.Children.map(children, footerNavLi)}
             <li key="copyright-footer-link" className={liClass}>
-                <a href="https://www.iu.edu/copyright/index.html">Copyright</a> &copy; 2019 The Trustees of <a href="https://www.iu.edu/">Indiana University</a>
+                <a href="https://www.iu.edu/copyright/index.html">Copyright</a> &copy; 2020 The Trustees of <a href="https://www.iu.edu/">Indiana University</a>
             </li>
         </ul>
     </footer>

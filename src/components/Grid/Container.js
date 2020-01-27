@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2018 The Trustees of Indiana University
+Copyright (C) 2020 The Trustees of Indiana University
 SPDX-License-Identifier: BSD-3-Clause
 */
 import classNames from 'classnames';
@@ -20,8 +20,8 @@ const propTypes = {
 const Container = 
 ({ center, children, className, width, ...attrs }) => {
     const classes = classNames({
-        ['rvt-container']: true,
-        ['rvt-container--center']: center,
+        'rvt-container': true,
+        'rvt-container--center': center,
         [`rvt-container--${width}`]: !!width
     }, className);
     return (
